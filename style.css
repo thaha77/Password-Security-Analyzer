@@ -1,0 +1,110 @@
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.analyzer-container {
+    background-color: #161b22;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #00ff66;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);
+    text-align: center;
+}
+
+.header h1 {
+    color: #00ff66;
+    font-size: 24px; 
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+
+.header p {
+    color: #8b949e;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    padding: 15px;
+    color: #00ff66;
+    font-size: 16px;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00ff66;
+}
+
+button {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #30363d;
+}
+
+.strength-meter {
+    background-color: #0d1117;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid #30363d;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: 0.4s ease;
+    background-color: #ff3333;
+}
+
+#strength-text {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+}
+
+.hacker-info {
+    background-color: #0d1117;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+    border-left: 4px solid #00ff66;
+}
+
+.hacker-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #c9d1d9;
+}
+
+.highlight {
+    color: #00ff66;
+    font-weight: bold;
+}

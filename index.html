@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowAI - Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="analyzer-container">
+        <div class="header">
+            <h1>🔒 SHADOW PASS-ANALYZER</h1>
+            <p>Check if your password can survive a cyber attack, Boss.</p>
+        </div>
+
+        <div class="input-section">
+            <input type="password" id="password-input" placeholder="Enter password to analyze..." oninput="analyzePassword()">
+            <button id="toggle-btn" onclick="toggleVisibility()">👁️</button>
+        </div>
+
+        <div class="result-section">
+            <div class="strength-meter">
+                <div id="strength-bar"></div>
+            </div>
+            <p id="strength-text">Status: Awaiting Input...</p>
+            
+            <div class="hacker-info">
+                <p>⚡ Time to Crack: <span id="crack-time" class="highlight">0 seconds</span></p>
+                <p>🛡️ Feedback: <span id="feedback-text">Enter a password to get security tips.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
